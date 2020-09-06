@@ -1,0 +1,595 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A70ABADF25054567004A8072 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A70ABADE25054567004A8072 /* AppDelegate.swift */; };
+		A70ABAE125054567004A8072 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A70ABAE025054567004A8072 /* SceneDelegate.swift */; };
+		A70ABAE325054567004A8072 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A70ABAE225054567004A8072 /* ViewController.swift */; };
+		A70ABAE625054567004A8072 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A70ABAE425054567004A8072 /* Main.storyboard */; };
+		A70ABAE82505456F004A8072 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A70ABAE72505456F004A8072 /* Assets.xcassets */; };
+		A70ABAEB2505456F004A8072 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A70ABAE92505456F004A8072 /* LaunchScreen.storyboard */; };
+		A70ABAF62505456F004A8072 /* MolkyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A70ABAF52505456F004A8072 /* MolkyTests.swift */; };
+		A70ABB012505456F004A8072 /* MolkyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A70ABB002505456F004A8072 /* MolkyUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A70ABAF22505456F004A8072 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A70ABAD325054567004A8072 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A70ABADA25054567004A8072;
+			remoteInfo = Molky;
+		};
+		A70ABAFD2505456F004A8072 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A70ABAD325054567004A8072 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A70ABADA25054567004A8072;
+			remoteInfo = Molky;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A70ABADB25054567004A8072 /* Molky.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Molky.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A70ABADE25054567004A8072 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A70ABAE025054567004A8072 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A70ABAE225054567004A8072 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A70ABAE525054567004A8072 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A70ABAE72505456F004A8072 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A70ABAEA2505456F004A8072 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A70ABAEC2505456F004A8072 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A70ABAF12505456F004A8072 /* MolkyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MolkyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A70ABAF52505456F004A8072 /* MolkyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MolkyTests.swift; sourceTree = "<group>"; };
+		A70ABAF72505456F004A8072 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A70ABAFC2505456F004A8072 /* MolkyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MolkyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A70ABB002505456F004A8072 /* MolkyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MolkyUITests.swift; sourceTree = "<group>"; };
+		A70ABB022505456F004A8072 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A70ABAD825054567004A8072 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A70ABAEE2505456F004A8072 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A70ABAF92505456F004A8072 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A70ABAD225054567004A8072 = {
+			isa = PBXGroup;
+			children = (
+				A70ABADD25054567004A8072 /* Molky */,
+				A70ABAF42505456F004A8072 /* MolkyTests */,
+				A70ABAFF2505456F004A8072 /* MolkyUITests */,
+				A70ABADC25054567004A8072 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A70ABADC25054567004A8072 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A70ABADB25054567004A8072 /* Molky.app */,
+				A70ABAF12505456F004A8072 /* MolkyTests.xctest */,
+				A70ABAFC2505456F004A8072 /* MolkyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A70ABADD25054567004A8072 /* Molky */ = {
+			isa = PBXGroup;
+			children = (
+				A70ABADE25054567004A8072 /* AppDelegate.swift */,
+				A70ABAE025054567004A8072 /* SceneDelegate.swift */,
+				A70ABAE225054567004A8072 /* ViewController.swift */,
+				A70ABAE425054567004A8072 /* Main.storyboard */,
+				A70ABAE72505456F004A8072 /* Assets.xcassets */,
+				A70ABAE92505456F004A8072 /* LaunchScreen.storyboard */,
+				A70ABAEC2505456F004A8072 /* Info.plist */,
+			);
+			path = Molky;
+			sourceTree = "<group>";
+		};
+		A70ABAF42505456F004A8072 /* MolkyTests */ = {
+			isa = PBXGroup;
+			children = (
+				A70ABAF52505456F004A8072 /* MolkyTests.swift */,
+				A70ABAF72505456F004A8072 /* Info.plist */,
+			);
+			path = MolkyTests;
+			sourceTree = "<group>";
+		};
+		A70ABAFF2505456F004A8072 /* MolkyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A70ABB002505456F004A8072 /* MolkyUITests.swift */,
+				A70ABB022505456F004A8072 /* Info.plist */,
+			);
+			path = MolkyUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A70ABADA25054567004A8072 /* Molky */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A70ABB052505456F004A8072 /* Build configuration list for PBXNativeTarget "Molky" */;
+			buildPhases = (
+				A70ABAD725054567004A8072 /* Sources */,
+				A70ABAD825054567004A8072 /* Frameworks */,
+				A70ABAD925054567004A8072 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Molky;
+			productName = Molky;
+			productReference = A70ABADB25054567004A8072 /* Molky.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A70ABAF02505456F004A8072 /* MolkyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A70ABB082505456F004A8072 /* Build configuration list for PBXNativeTarget "MolkyTests" */;
+			buildPhases = (
+				A70ABAED2505456F004A8072 /* Sources */,
+				A70ABAEE2505456F004A8072 /* Frameworks */,
+				A70ABAEF2505456F004A8072 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A70ABAF32505456F004A8072 /* PBXTargetDependency */,
+			);
+			name = MolkyTests;
+			productName = MolkyTests;
+			productReference = A70ABAF12505456F004A8072 /* MolkyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A70ABAFB2505456F004A8072 /* MolkyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A70ABB0B2505456F004A8072 /* Build configuration list for PBXNativeTarget "MolkyUITests" */;
+			buildPhases = (
+				A70ABAF82505456F004A8072 /* Sources */,
+				A70ABAF92505456F004A8072 /* Frameworks */,
+				A70ABAFA2505456F004A8072 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A70ABAFE2505456F004A8072 /* PBXTargetDependency */,
+			);
+			name = MolkyUITests;
+			productName = MolkyUITests;
+			productReference = A70ABAFC2505456F004A8072 /* MolkyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A70ABAD325054567004A8072 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1170;
+				LastUpgradeCheck = 1170;
+				ORGANIZATIONNAME = Valentin;
+				TargetAttributes = {
+					A70ABADA25054567004A8072 = {
+						CreatedOnToolsVersion = 11.7;
+					};
+					A70ABAF02505456F004A8072 = {
+						CreatedOnToolsVersion = 11.7;
+						TestTargetID = A70ABADA25054567004A8072;
+					};
+					A70ABAFB2505456F004A8072 = {
+						CreatedOnToolsVersion = 11.7;
+						TestTargetID = A70ABADA25054567004A8072;
+					};
+				};
+			};
+			buildConfigurationList = A70ABAD625054567004A8072 /* Build configuration list for PBXProject "Molky" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A70ABAD225054567004A8072;
+			productRefGroup = A70ABADC25054567004A8072 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A70ABADA25054567004A8072 /* Molky */,
+				A70ABAF02505456F004A8072 /* MolkyTests */,
+				A70ABAFB2505456F004A8072 /* MolkyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A70ABAD925054567004A8072 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A70ABAEB2505456F004A8072 /* LaunchScreen.storyboard in Resources */,
+				A70ABAE82505456F004A8072 /* Assets.xcassets in Resources */,
+				A70ABAE625054567004A8072 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A70ABAEF2505456F004A8072 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A70ABAFA2505456F004A8072 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A70ABAD725054567004A8072 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A70ABAE325054567004A8072 /* ViewController.swift in Sources */,
+				A70ABADF25054567004A8072 /* AppDelegate.swift in Sources */,
+				A70ABAE125054567004A8072 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A70ABAED2505456F004A8072 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A70ABAF62505456F004A8072 /* MolkyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A70ABAF82505456F004A8072 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A70ABB012505456F004A8072 /* MolkyUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A70ABAF32505456F004A8072 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A70ABADA25054567004A8072 /* Molky */;
+			targetProxy = A70ABAF22505456F004A8072 /* PBXContainerItemProxy */;
+		};
+		A70ABAFE2505456F004A8072 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A70ABADA25054567004A8072 /* Molky */;
+			targetProxy = A70ABAFD2505456F004A8072 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A70ABAE425054567004A8072 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A70ABAE525054567004A8072 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A70ABAE92505456F004A8072 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A70ABAEA2505456F004A8072 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A70ABB032505456F004A8072 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A70ABB042505456F004A8072 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A70ABB062505456F004A8072 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VJ7H6QD38D;
+				INFOPLIST_FILE = Molky/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Valred7.Molky;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A70ABB072505456F004A8072 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VJ7H6QD38D;
+				INFOPLIST_FILE = Molky/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Valred7.Molky;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A70ABB092505456F004A8072 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VJ7H6QD38D;
+				INFOPLIST_FILE = MolkyTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Valred7.MolkyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Molky.app/Molky";
+			};
+			name = Debug;
+		};
+		A70ABB0A2505456F004A8072 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VJ7H6QD38D;
+				INFOPLIST_FILE = MolkyTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Valred7.MolkyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Molky.app/Molky";
+			};
+			name = Release;
+		};
+		A70ABB0C2505456F004A8072 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VJ7H6QD38D;
+				INFOPLIST_FILE = MolkyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Valred7.MolkyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Molky;
+			};
+			name = Debug;
+		};
+		A70ABB0D2505456F004A8072 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VJ7H6QD38D;
+				INFOPLIST_FILE = MolkyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Valred7.MolkyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Molky;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A70ABAD625054567004A8072 /* Build configuration list for PBXProject "Molky" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A70ABB032505456F004A8072 /* Debug */,
+				A70ABB042505456F004A8072 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A70ABB052505456F004A8072 /* Build configuration list for PBXNativeTarget "Molky" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A70ABB062505456F004A8072 /* Debug */,
+				A70ABB072505456F004A8072 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A70ABB082505456F004A8072 /* Build configuration list for PBXNativeTarget "MolkyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A70ABB092505456F004A8072 /* Debug */,
+				A70ABB0A2505456F004A8072 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A70ABB0B2505456F004A8072 /* Build configuration list for PBXNativeTarget "MolkyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A70ABB0C2505456F004A8072 /* Debug */,
+				A70ABB0D2505456F004A8072 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A70ABAD325054567004A8072 /* Project object */;
+}
