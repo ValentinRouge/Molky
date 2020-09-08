@@ -15,6 +15,8 @@
 		A70ABAEB2505456F004A8072 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A70ABAE92505456F004A8072 /* LaunchScreen.storyboard */; };
 		A70ABAF62505456F004A8072 /* MolkyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A70ABAF52505456F004A8072 /* MolkyTests.swift */; };
 		A70ABB012505456F004A8072 /* MolkyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A70ABB002505456F004A8072 /* MolkyUITests.swift */; };
+		A77F6E6C250571FA0056F285 /* GameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77F6E6B250571FA0056F285 /* GameManager.swift */; };
+		A7F83BBE2506A49200B0E710 /* NewGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F83BBD2506A49200B0E710 /* NewGameViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		A70ABAFC2505456F004A8072 /* MolkyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MolkyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A70ABB002505456F004A8072 /* MolkyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MolkyUITests.swift; sourceTree = "<group>"; };
 		A70ABB022505456F004A8072 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A77F6E6B250571FA0056F285 /* GameManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameManager.swift; sourceTree = "<group>"; };
+		A7F83BBD2506A49200B0E710 /* NewGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewGameViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,10 +106,12 @@
 				A70ABADE25054567004A8072 /* AppDelegate.swift */,
 				A70ABAE025054567004A8072 /* SceneDelegate.swift */,
 				A70ABAE225054567004A8072 /* ViewController.swift */,
+				A7F83BBD2506A49200B0E710 /* NewGameViewController.swift */,
 				A70ABAE425054567004A8072 /* Main.storyboard */,
 				A70ABAE72505456F004A8072 /* Assets.xcassets */,
 				A70ABAE92505456F004A8072 /* LaunchScreen.storyboard */,
 				A70ABAEC2505456F004A8072 /* Info.plist */,
+				A77F6E6B250571FA0056F285 /* GameManager.swift */,
 			);
 			path = Molky;
 			sourceTree = "<group>";
@@ -260,6 +266,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A70ABAE325054567004A8072 /* ViewController.swift in Sources */,
+				A77F6E6C250571FA0056F285 /* GameManager.swift in Sources */,
+				A7F83BBE2506A49200B0E710 /* NewGameViewController.swift in Sources */,
 				A70ABADF25054567004A8072 /* AppDelegate.swift in Sources */,
 				A70ABAE125054567004A8072 /* SceneDelegate.swift in Sources */,
 			);
@@ -366,7 +374,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -420,7 +428,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
