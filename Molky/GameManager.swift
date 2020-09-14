@@ -80,6 +80,10 @@ class GameManager{
         }
     }
     
+    func DeletePlayer(playerNumber n:Int) {
+        playerList.remove(at: n)
+    }
+    
     private func haswin (n:Int) {
         if playerList[n]._score == 50{
             playerList[n]._isGameOn = false

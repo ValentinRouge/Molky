@@ -50,7 +50,8 @@
                                 <rect key="frame" x="155" y="482" width="104" height="30"/>
                                 <state key="normal" title="Nouvelle partie"/>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" identifier="Game" id="W31-hS-Xoz"/>
+                                    <action selector="NewGameButtonTouched:" destination="pJi-3n-oue" eventType="touchUpInside" id="5wH-wD-ewK"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="Game" id="1H2-vi-VlI"/>
                                 </connections>
                             </button>
                         </subviews>

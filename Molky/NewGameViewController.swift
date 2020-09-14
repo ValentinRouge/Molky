@@ -21,8 +21,16 @@ class NewGameViewControler: UIViewController, UITableViewDataSource{
         // Do any additional setup after loading the view.
     }
     
+    @IBAction func NewGameButtonTouched(_ sender: Any) {
+        if gameManager1.getHowManyPlayer() == 0 {
+            let alert = UIAlertController(title: "Erreur", message: "Vous ne pouvez pas lancer une partie avec 0 joueur.", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil ))
+            self.present(alert, animated: true, completion: nil)
+        }
+    }
+    
     @IBAction func NewPlayerButtonTouched(_ sender: Any) {
-        let alert = UIAlertController(title: "Nom du joeur", message: "Entrez le nom du joueur", preferredStyle: .alert)
+        let alert = UIAlertController(title: "Nom du joueur", message: "Entrez le nom du joueur", preferredStyle: .alert)
         alert.addTextField { (textField) in
             textField.placeholder = "Nom du joeur"}
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { [weak alert] (_) in
@@ -46,5 +54,8 @@ class NewGameViewControler: UIViewController, UITableViewDataSource{
         return cell
     }
     
-    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        gameManager1.DeletePlayer(playerNumber: indexPath.row)
+        NameTableView.deleteRows(at: [indexPath], with: .automatic)
+    }
 }
