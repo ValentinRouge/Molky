@@ -71,6 +71,15 @@ class GameManager{
         }
     }
     
+    func relnitScore() {
+        for n in 0...(getHowManyPlayer()-1){
+            playerList[n]._score = 0
+            playerList[n]._isGameOn = true
+            playerList[n].numberof0 = 0
+            playerList[n].resonOfEndGame = nil
+        }
+    }
+    
     private func haswin (n:Int) {
         if playerList[n]._score == 50{
             playerList[n]._isGameOn = false

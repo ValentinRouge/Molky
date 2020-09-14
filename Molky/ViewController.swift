@@ -19,7 +19,9 @@ class ViewController: UIViewController, UITableViewDataSource {
         super.viewDidLoad()
         Ui_tableview.dataSource=self
         ScoreStackView.isHidden = false
-
+        QuestionLabel.isHidden = false
+        playerManager2.relnitScore()
+        actualiseScreenNewPlayer()
         // Do any additional setup after loading the view.
     }
     
@@ -45,6 +47,8 @@ class ViewController: UIViewController, UITableViewDataSource {
             
     @IBOutlet weak var ScoreStackView: UIStackView!
     
+    @IBOutlet weak var QuestionLabel: UILabel!
+    
     @IBAction func OkButtonPressed(_ sender: Any) {
         ScoreFieldOutlet.resignFirstResponder()
         if let score:Int = Int(ScoreFieldOutlet.text ?? "0") {
@@ -52,6 +56,7 @@ class ViewController: UIViewController, UITableViewDataSource {
                playerManager2.newscore(playerNumber: playerPlayingNumber, newScore: score)
                if playerManager2.getPlayerGameOn(playerNumber: playerPlayingNumber) == false{
                    ScoreStackView.isHidden = true
+                   QuestionLabel.isHidden = true
                    if let reason = playerManager2.getPlayerResonOfEndGame(playerNumber: playerPlayingNumber),
                       reason == 1{
                        let alert = UIAlertController(title: "Bravo", message: "Vous avez gagné", preferredStyle: .alert)
@@ -79,7 +84,8 @@ class ViewController: UIViewController, UITableViewDataSource {
     }
     
     func actualiseScreenNewPlayer(){
-        NameLabel.text = playerManager2.getPlayerName(playerNumber: playerPlayingNumber)
+        NameLabel.text = "\(playerManager2.getPlayerName(playerNumber: playerPlayingNumber)) joue"
+        QuestionLabel.text = "Quel est le score de \(playerManager2.getPlayerName(playerNumber: playerPlayingNumber))?"
     }
 }
 

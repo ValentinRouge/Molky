@@ -129,7 +129,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="45" translatesAutoresizingMaskIntoConstraints="NO" id="jMs-7g-OKm">
                                 <rect key="frame" x="20" y="518" width="374" height="34"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="pr7-eU-PvZ">
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Score" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="pr7-eU-PvZ">
                                         <rect key="frame" x="0.0" y="0.0" width="299" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
@@ -165,6 +165,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="NameLabel" destination="52b-46-Tsg" id="JPV-Po-Qid"/>
+                        <outlet property="QuestionLabel" destination="UfD-dz-Xms" id="PMq-ih-ksB"/>
                         <outlet property="ScoreFieldOutlet" destination="pr7-eU-PvZ" id="nxG-W6-KTp"/>
                         <outlet property="ScoreStackView" destination="jMs-7g-OKm" id="r3W-pm-LTh"/>
                         <outlet property="Ui_tableview" destination="1XO-7N-sKh" id="kBL-Op-LLs"/>
