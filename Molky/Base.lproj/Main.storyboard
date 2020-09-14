@@ -16,20 +16,61 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TpY-SM-Y0g">
-                                <rect key="frame" x="155" y="299" width="104" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="NLm-c5-9UK">
+                                <rect key="frame" x="10" y="98" width="394" height="325"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="NameCell" textLabel="kmJ-wa-A8a" style="IBUITableViewCellStyleDefault" id="KQU-YU-Z2y">
+                                        <rect key="frame" x="0.0" y="28" width="394" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KQU-YU-Z2y" id="rCB-bE-Jug">
+                                            <rect key="frame" x="0.0" y="0.0" width="394" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="kmJ-wa-A8a">
+                                                    <rect key="frame" x="20" y="0.0" width="354" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n7W-yN-wJW">
+                                <rect key="frame" x="153" y="433" width="108" height="30"/>
+                                <state key="normal" title="Nouveau joueur"/>
+                                <connections>
+                                    <action selector="NewPlayerButtonTouched:" destination="pJi-3n-oue" eventType="touchUpInside" id="CaP-AX-K70"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TpY-SM-Y0g">
+                                <rect key="frame" x="155" y="482" width="104" height="30"/>
                                 <state key="normal" title="Nouvelle partie"/>
                                 <connections>
-                                    <action selector="NewGameButtonTouched:" destination="pJi-3n-oue" eventType="touchUpInside" id="7Rb-CK-crR"/>
                                     <segue destination="BYZ-38-t0r" kind="show" identifier="Game" id="W31-hS-Xoz"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="8zj-gW-F5N"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="TpY-SM-Y0g" firstAttribute="centerX" secondItem="kFc-fy-s0I" secondAttribute="centerX" id="1lI-IV-91q"/>
+                            <constraint firstItem="TpY-SM-Y0g" firstAttribute="top" secondItem="n7W-yN-wJW" secondAttribute="bottom" constant="19" id="CT0-ig-4Vu"/>
+                            <constraint firstItem="n7W-yN-wJW" firstAttribute="centerX" secondItem="kFc-fy-s0I" secondAttribute="centerX" id="R9A-be-BoI"/>
+                            <constraint firstItem="NLm-c5-9UK" firstAttribute="top" secondItem="8zj-gW-F5N" secondAttribute="top" constant="10" id="XU7-tw-gvC"/>
+                            <constraint firstItem="n7W-yN-wJW" firstAttribute="centerY" secondItem="kFc-fy-s0I" secondAttribute="centerY" id="ZzI-Sd-ikI"/>
+                            <constraint firstItem="8zj-gW-F5N" firstAttribute="trailing" secondItem="NLm-c5-9UK" secondAttribute="trailing" constant="10" id="gAT-Ox-MB5"/>
+                            <constraint firstItem="n7W-yN-wJW" firstAttribute="top" secondItem="NLm-c5-9UK" secondAttribute="bottom" constant="10" id="lYZ-sD-uLI"/>
+                            <constraint firstItem="NLm-c5-9UK" firstAttribute="leading" secondItem="8zj-gW-F5N" secondAttribute="leading" constant="10" id="lcc-gF-VN7"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Molky" id="o50-xI-SJK"/>
+                    <connections>
+                        <outlet property="NameTableView" destination="NLm-c5-9UK" id="gsD-3y-SDe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dYK-nY-snK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
