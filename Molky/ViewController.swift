@@ -19,6 +19,7 @@ class ViewController: UIViewController, UITableViewDataSource {
         super.viewDidLoad()
         Ui_tableview.dataSource=self
         ScoreStackView.isHidden = false
+
         // Do any additional setup after loading the view.
     }
     

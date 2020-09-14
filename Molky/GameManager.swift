@@ -38,19 +38,6 @@ class GameManager{
         playerList.append(player.init(nameIs: givenName))
     }
     
-    func newscore(playerNumber n:Int, newScore:Int) {
-        if newScore != 0{
-            playerList[n]._score = playerList[n]._score + newScore
-            playerList[n].numberof0 = 0
-            haswin(n: n)
-        } else {
-            playerList[n].numberof0 = playerList[n].numberof0 + 1
-            if playerList[n].numberof0 == 3 {
-                returnback(n: n)
-            }
-        }
-    }
-    
     func getPlayerScore(playerNumber n:Int) -> Int {
         return playerList[n]._score
     }
@@ -69,6 +56,19 @@ class GameManager{
     
     func getPlayerResonOfEndGame(playerNumber n:Int) -> Int?{
         return playerList[n].resonOfEndGame
+    }
+    
+    func newscore(playerNumber n:Int, newScore:Int) {
+        if newScore != 0{
+            playerList[n]._score = playerList[n]._score + newScore
+            playerList[n].numberof0 = 0
+            haswin(n: n)
+        } else {
+            playerList[n].numberof0 = playerList[n].numberof0 + 1
+            if playerList[n].numberof0 == 3 {
+                returnback(n: n)
+            }
+        }
     }
     
     private func haswin (n:Int) {
