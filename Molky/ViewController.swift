@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController, UITableViewDataSource {
     
     let playerManager2 = GameManager.shared
+    var playerPlayingNumber:Int = 0
 
     @IBOutlet weak var Ui_tableview: UITableView!
     
@@ -47,21 +48,26 @@ class ViewController: UIViewController, UITableViewDataSource {
         ScoreFieldOutlet.resignFirstResponder()
         if let score:Int = Int(ScoreFieldOutlet.text ?? "0") {
               if score <= 12{
-               playerManager2.newscore(playerNumber: 0, newScore: score)
-               if playerManager2.getPlayerGameOn(playerNumber: 0) == false{
+               playerManager2.newscore(playerNumber: playerPlayingNumber, newScore: score)
+               if playerManager2.getPlayerGameOn(playerNumber: playerPlayingNumber) == false{
                    ScoreStackView.isHidden = true
-                   if let reason = playerManager2.getPlayerResonOfEndGame(playerNumber: 0),
+                   if let reason = playerManager2.getPlayerResonOfEndGame(playerNumber: playerPlayingNumber),
                       reason == 1{
                        let alert = UIAlertController(title: "Bravo", message: "Vous avez gagné", preferredStyle: .alert)
                        alert.addAction(UIAlertAction(title: "Cool", style: .default, handler: nil))
                        self.present(alert, animated: true, completion: nil)
-                   } else if let reason = playerManager2.getPlayerResonOfEndGame(playerNumber: 0),
+                   } else if let reason = playerManager2.getPlayerResonOfEndGame(playerNumber: playerPlayingNumber),
                    reason == 0{
                        let alert = UIAlertController(title: "Vous avez perdu", message: "Vous avez marqué 0 points pendant 3 tous consécutifs. \n Vous ferez mieux la prochaine fois !", preferredStyle: .alert)
                        alert.addAction(UIAlertAction(title: "Okay", style: .default, handler: nil))
                        self.present(alert, animated: true, completion: nil)
                    }
                }
+                playerPlayingNumber = playerPlayingNumber + 1
+                if playerPlayingNumber >= playerManager2.getHowManyPlayer(){
+                    playerPlayingNumber = 0
+                }
+                actualiseScreenNewPlayer()
                Ui_tableview.reloadData()
            } else {
                let alert = UIAlertController(title: "Veillez entrer un nombre correct", message: "Au molky un score ne peut être supérieur a 12", preferredStyle: .alert)
@@ -69,6 +75,10 @@ class ViewController: UIViewController, UITableViewDataSource {
                self.present(alert, animated: true, completion: nil)
            }
         }
+    }
+    
+    func actualiseScreenNewPlayer(){
+        NameLabel.text = playerManager2.getPlayerName(playerNumber: playerPlayingNumber)
     }
 }
 
