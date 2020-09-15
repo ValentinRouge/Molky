@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="NLm-c5-9UK">
-                                <rect key="frame" x="10" y="98" width="394" height="325"/>
+                                <rect key="frame" x="10" y="142" width="394" height="281"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="NameCell" textLabel="kmJ-wa-A8a" style="IBUITableViewCellStyleDefault" id="KQU-YU-Z2y">
@@ -40,32 +40,81 @@
                                 </prototypes>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n7W-yN-wJW">
-                                <rect key="frame" x="153" y="433" width="108" height="30"/>
-                                <state key="normal" title="Nouveau joueur"/>
+                                <rect key="frame" x="25" y="433" width="265" height="30"/>
+                                <color key="backgroundColor" systemColor="quaternaryLabelColor"/>
+                                <state key="normal" title="Nouveau joueur">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="NewPlayerButtonTouched:" destination="pJi-3n-oue" eventType="touchUpInside" id="CaP-AX-K70"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TpY-SM-Y0g">
-                                <rect key="frame" x="155" y="482" width="104" height="30"/>
-                                <state key="normal" title="Nouvelle partie"/>
+                                <rect key="frame" x="25" y="482" width="364" height="45"/>
+                                <color key="backgroundColor" systemColor="linkColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="afD-AW-MH3"/>
+                                </constraints>
+                                <state key="normal" title="Nouvelle partie">
+                                    <color key="titleColor" systemColor="systemBackgroundColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" systemColor="linkColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="NewGameButtonTouched:" destination="pJi-3n-oue" eventType="touchUpInside" id="5wH-wD-ewK"/>
                                     <segue destination="BYZ-38-t0r" kind="show" identifier="Game" id="1H2-vi-VlI"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TCA-Wp-Jlw">
+                                <rect key="frame" x="310" y="433" width="79" height="30"/>
+                                <state key="normal" title="Réinitialiser">
+                                    <color key="titleColor" systemColor="systemRedColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="relnitButtonTouched:" destination="pJi-3n-oue" eventType="touchUpInside" id="2lg-ic-MXU"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Joueurs" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wbd-a3-Sud">
+                                <rect key="frame" x="158.5" y="98" width="97" height="34"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="8zj-gW-F5N"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="TpY-SM-Y0g" firstAttribute="top" secondItem="n7W-yN-wJW" secondAttribute="bottom" constant="19" id="0sC-Sp-RdF"/>
+                            <constraint firstItem="n7W-yN-wJW" firstAttribute="top" secondItem="NLm-c5-9UK" secondAttribute="bottom" constant="10" id="0us-Vt-SAU"/>
                             <constraint firstItem="TpY-SM-Y0g" firstAttribute="centerX" secondItem="kFc-fy-s0I" secondAttribute="centerX" id="1lI-IV-91q"/>
-                            <constraint firstItem="TpY-SM-Y0g" firstAttribute="top" secondItem="n7W-yN-wJW" secondAttribute="bottom" constant="19" id="CT0-ig-4Vu"/>
-                            <constraint firstItem="n7W-yN-wJW" firstAttribute="centerX" secondItem="kFc-fy-s0I" secondAttribute="centerX" id="R9A-be-BoI"/>
-                            <constraint firstItem="NLm-c5-9UK" firstAttribute="top" secondItem="8zj-gW-F5N" secondAttribute="top" constant="10" id="XU7-tw-gvC"/>
-                            <constraint firstItem="n7W-yN-wJW" firstAttribute="centerY" secondItem="kFc-fy-s0I" secondAttribute="centerY" id="ZzI-Sd-ikI"/>
+                            <constraint firstItem="n7W-yN-wJW" firstAttribute="leading" secondItem="TpY-SM-Y0g" secondAttribute="leading" id="OWf-Vi-Yjz"/>
+                            <constraint firstItem="8zj-gW-F5N" firstAttribute="trailing" secondItem="TpY-SM-Y0g" secondAttribute="trailing" constant="25" id="RMy-Lc-r6Q"/>
+                            <constraint firstItem="n7W-yN-wJW" firstAttribute="baseline" secondItem="TCA-Wp-Jlw" secondAttribute="baseline" id="YuN-i5-tHv"/>
+                            <constraint firstItem="TCA-Wp-Jlw" firstAttribute="leading" secondItem="n7W-yN-wJW" secondAttribute="trailing" constant="20" id="aMh-mt-KIr"/>
+                            <constraint firstItem="Wbd-a3-Sud" firstAttribute="centerX" secondItem="kFc-fy-s0I" secondAttribute="centerX" id="coZ-4t-shG"/>
                             <constraint firstItem="8zj-gW-F5N" firstAttribute="trailing" secondItem="NLm-c5-9UK" secondAttribute="trailing" constant="10" id="gAT-Ox-MB5"/>
-                            <constraint firstItem="n7W-yN-wJW" firstAttribute="top" secondItem="NLm-c5-9UK" secondAttribute="bottom" constant="10" id="lYZ-sD-uLI"/>
+                            <constraint firstItem="NLm-c5-9UK" firstAttribute="top" secondItem="Wbd-a3-Sud" secondAttribute="bottom" constant="10" id="jns-ZX-2oq"/>
+                            <constraint firstItem="TCA-Wp-Jlw" firstAttribute="trailing" secondItem="TpY-SM-Y0g" secondAttribute="trailing" id="kNR-gu-Saw"/>
                             <constraint firstItem="NLm-c5-9UK" firstAttribute="leading" secondItem="8zj-gW-F5N" secondAttribute="leading" constant="10" id="lcc-gF-VN7"/>
+                            <constraint firstItem="Wbd-a3-Sud" firstAttribute="top" secondItem="8zj-gW-F5N" secondAttribute="top" constant="10" id="xxj-W3-oax"/>
+                            <constraint firstItem="TpY-SM-Y0g" firstAttribute="leading" secondItem="8zj-gW-F5N" secondAttribute="leading" constant="25" id="yuw-io-5Fl"/>
+                            <constraint firstItem="n7W-yN-wJW" firstAttribute="centerY" secondItem="kFc-fy-s0I" secondAttribute="centerY" id="zNt-d3-4UO"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Molky" id="o50-xI-SJK"/>
@@ -196,8 +245,20 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="quaternaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.17999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

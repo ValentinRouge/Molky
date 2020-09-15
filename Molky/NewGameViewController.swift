@@ -42,6 +42,11 @@ class NewGameViewControler: UIViewController, UITableViewDataSource{
         self.present(alert, animated: true, completion: nil)
     }
     
+    @IBAction func relnitButtonTouched(_ sender: Any) {
+        gameManager1.DeleteAllPlayer()
+        NameTableView.reloadData()
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return gameManager1.getHowManyPlayer()
     }

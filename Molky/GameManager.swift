@@ -31,8 +31,10 @@ class GameManager{
     
     private init() {
         if let List = UserDefaults.standard.array(forKey: Key) as? [String]{
-            for n in 0...(List.count-1){
-                createPlayer(givenName: List[n])
+            if List.count != 0 {
+                for n in 0...(List.count-1){
+                    createPlayer(givenName: List[n])
+                }
             }
         }
     }
@@ -92,6 +94,10 @@ class GameManager{
         save()
     }
     
+    func DeleteAllPlayer() {
+        playerList = []
+        save()
+    }
     private func haswin (n:Int) {
         if playerList[n]._score == 50{
             playerList[n]._isGameOn = false
@@ -117,8 +123,10 @@ class GameManager{
     
     private func save(){
         var nameList:[String] = []
-        for n in 0...(getHowManyPlayer()-1){
-            nameList.append(playerList[n].name)
+        if getHowManyPlayer() != 0{
+            for n in 0...(getHowManyPlayer()-1){
+                nameList.append(playerList[n].name)
+            }
         }
         UserDefaults.standard.set(nameList, forKey: Key)
     }
