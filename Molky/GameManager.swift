@@ -59,6 +59,10 @@ class GameManager{
         return playerList[n].name
     }
     
+    func getPlayerNumber0(playerNumber n:Int) -> Int {
+        return playerList[n].numberof0
+    }
+    
     func getHowManyPlayer() -> Int {
         return playerList.count
     }

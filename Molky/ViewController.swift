@@ -40,7 +40,17 @@ import UIKit
     }
 }
 
+class ResultCell: UITableViewCell {
+    @IBOutlet weak var NameLabel: UILabel!
+    @IBOutlet weak var scoreLabel: UILabel!
+    @IBOutlet weak var dot1: UIImageView!
+    @IBOutlet weak var dot2: UIImageView!
+    
+}
+
 class ViewController: UIViewController, UITableViewDataSource {
+
+    
     
     let playerManager2 = GameManager.shared
     var playerPlayingNumber:Int = 0
@@ -62,13 +72,24 @@ class ViewController: UIViewController, UITableViewDataSource {
         return playerManager2.getHowManyPlayer()
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell : UITableViewCell = Ui_tableview.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        if let TitleLabel = cell.textLabel{
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
+        let cell = Ui_tableview.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! ResultCell
+        if let TitleLabel = cell.NameLabel{
             TitleLabel.text = String( playerManager2.getPlayerName(playerNumber: indexPath.row))
         }
-        if let detailLabel = cell.detailTextLabel{
+        if let detailLabel = cell.scoreLabel{
             detailLabel.text = String( playerManager2.getPlayerScore(playerNumber: indexPath.row))
+        }
+        let number0 = playerManager2.getPlayerNumber0(playerNumber: indexPath.row)
+        if number0 == 0{
+            cell.dot1.isHidden = true
+            cell.dot2.isHidden = true
+        } else if number0 == 1 {
+            cell.dot1.isHidden = false
+            cell.dot2.isHidden = true
+        }else if number0 == 2 {
+            cell.dot1.isHidden = false
+            cell.dot2.isHidden = false
         }
         return cell 
     }
